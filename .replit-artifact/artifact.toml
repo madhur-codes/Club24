@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Club 24 Restaurant"
+description = "A rich, welcoming landing page for Club 24 Restaurant, presenting its Indian meals, special thali, sweets, reviews, hours, and local hospitality in English and Hindi."
+version = "1.0.0"
+id = "artifacts/club-24-restaurant"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22418
+
+[services.development]
+run = "pnpm --filter @workspace/club-24-restaurant run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/club-24-restaurant", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/club-24-restaurant/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22418"
+BASE_PATH = "/"

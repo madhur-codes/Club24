@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Club 24 Restaurant — a beloved neighbourhood Indian restaurant and sweets destination with generous food, warm service, and all-day energy."
+    />
+    <meta name="theme-color" content="#20283b" />
+    <title>Club 24 Restaurant — Good food, properly local</title>
+    <link rel="stylesheet" href="./club-24-restaurant.css" />
+  </head>
+  <body>
+    <main id="top">
+      <div class="announcement">
+        <span class="announcement-dot"></span>
+        OPEN TODAY · SERVING THROUGH 11 PM
+      </div>
+
+      <header class="site-header">
+        <a class="logo" href="#top" aria-label="Club 24 home">
+          <span class="logo-mark"><span>24</span></span>
+          <span>
+            <strong>CLUB 24</strong>
+            <small>क्लब 24 रेस्टोरेंट</small>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#story">The feeling</a>
+          <a href="#menu">What to eat</a>
+          <a href="#reviews">What people say</a>
+          <a href="#visit">Plan a visit</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </header>
+
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#story">The feeling</a>
+        <a href="#menu">What to eat</a>
+        <a href="#reviews">What people say</a>
+        <a href="#visit">Plan a visit</a>
+      </nav>
+
+      <section class="hero grain">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow light">THE LOCAL TABLE · ALL DAY, EVERY DAY</p>
+            <h1>Come hungry.<br /><em>Leave glowing.</em></h1>
+            <p class="hero-description">
+              A generous Indian kitchen and sweet counter for family dinners,
+              quick dosas, and the “let’s get one more” crowd.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-gold" href="#menu">See what’s cooking <span>↘</span></a>
+              <a class="button button-outline" href="#visit">Plan a visit</a>
+            </div>
+            <div class="stats">
+              <div><strong>★ 4.4</strong><small>383 reviews</small></div>
+              <i></i>
+              <div><strong>₹200–800</strong><small>per person</small></div>
+              <i></i>
+              <div><strong>Till 11</strong><small>open tonight</small></div>
+            </div>
+          </div>
+          <div class="hero-image-wrap">
+            <span class="hero-stamp">GOOD<br />FOOD<br />GOOD<br />PEOPLE</span>
+            <div class="hero-image">
+              <img src="../public/club24-thali.jpg" alt="A generous Club 24 Special Thali" />
+            </div>
+            <div class="hero-caption">
+              <span>TRY THIS FIRST</span>
+              <strong>Club 24 Special Thali</strong>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#story">SCROLL TO THE TABLE <i></i></a>
+      </section>
+
+      <div class="marquee">
+        <div>
+          <span>THALI FIRST</span><b></b><span>DOSA OF THE DAY</span><b></b>
+          <span>SWEETS FOR THE ROAD</span><b></b><span>WARM SERVICE</span><b></b>
+          <span>OPEN TILL 11 PM</span><b></b><span>THALI FIRST</span><b></b>
+          <span>DOSA OF THE DAY</span><b></b><span>SWEETS FOR THE ROAD</span>
+        </div>
+      </div>
+
+      <section id="story" class="section story-section">
+        <div class="container story-grid">
+          <div class="story-intro">
+            <p class="eyebrow">THE FEELING</p>
+            <h2>Some places<br /><em>feed you.</em><br />This one keeps you.</h2>
+            <p>
+              Club 24 is the reliable answer when everyone wants something
+              different. A table that moves at its own lively pace — breakfast
+              cravings, a full thali, something sweet for the ride home.
+            </p>
+            <strong class="heart-line"><span>♡</span> Made for regulars, first-timers, and the people they bring.</strong>
+          </div>
+          <div class="story-cards">
+            <article class="story-card dark-card">
+              <span class="card-number">01</span>
+              <span class="card-icon">⌁</span>
+              <h3>Generous by default.</h3>
+              <p>Proper portions, familiar flavours, and a menu that makes room for the whole group.</p>
+            </article>
+            <article class="story-card pale-card">
+              <span class="card-number">02</span>
+              <span class="card-icon">◷</span>
+              <h3>All-day rhythm.</h3>
+              <p>Come early, come late, come back for sweets. The lights stay warm till 11 pm.</p>
+            </article>
+            <article class="story-card gold-card">
+              <span class="card-number">03</span>
+              <div class="gold-card-content">
+                <div><span class="card-icon">⌖</span><h3>Local enough to trust.</h3></div>
+                <p>The kind of recommendation that comes with directions, a parking tip, and “you have to try the peda.”</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section menu-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow light">THE SHORTLIST</p>
+              <h2>Start here.<br /><em>Stay awhile.</em></h2>
+            </div>
+            <p>Our menu moves with the day. These are the things regulars put in the middle of the table.</p>
+          </div>
+
+          <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+            <button class="active" type="button" data-category="loved" role="tab" aria-selected="true">Most loved</button>
+            <button type="button" data-category="tawa" role="tab" aria-selected="false">From the tawa</button>
+            <button type="button" data-category="sweets" role="tab" aria-selected="false">Sweet counter</button>
+          </div>
+
+          <div class="menu-layout">
+            <div class="menu-list" id="menu-list"></div>
+            <div class="sweet-image">
+              <img src="../public/club24-sweets.jpg" alt="Indian sweets arranged at the Club 24 counter" />
+              <div><span>DON'T SKIP THE EXIT</span><strong>Take a little<br />sweetness home.</strong></div>
+            </div>
+          </div>
+
+          <div class="menu-note">
+            <span>Prices are a guide — ask the team what is fresh today.</span>
+            <strong>Vegetarian-friendly favourites</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="sweet-banner">
+        <div class="container">
+          <strong>The sweet counter is right next door.</strong>
+          <span>Look for Shristi Misthan Bhandaar — then leave with something wrapped.</span>
+        </div>
+      </section>
+
+      <section id="reviews" class="section reviews-section">
+        <div class="container reviews-grid">
+          <div>
+            <p class="eyebrow">THE WORD ON THE STREET</p>
+            <h2>People come back<br /><em>for a reason.</em></h2>
+            <div class="review-rating"><span>★★★★★</span><strong>4.4 from 383 reviews</strong></div>
+          </div>
+          <article class="review-card">
+            <span class="quote-mark">“</span>
+            <p class="review-quote" id="review-quote"></p>
+            <div class="review-footer">
+              <div><strong id="review-name"></strong><small id="review-detail"></small></div>
+              <div class="review-controls">
+                <button type="button" id="previous-review" aria-label="Previous review">←</button>
+                <span id="review-count">01 / 03</span>
+                <button type="button" id="next-review" aria-label="Next review">→</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ritual-section">
+        <div class="ritual-orbit"></div>
+        <div class="container ritual-grid">
+          <div>
+            <p class="eyebrow light">A SMALL RITUAL</p>
+            <h2>Order the thali.<br />Add the sweet.<br /><em>Trust the room.</em></h2>
+          </div>
+          <div>
+            <p>There is no dress code, no secret handshake, and no wrong way to spend an evening here. Just arrive with an appetite.</p>
+            <a href="#visit">Plan the easy kind of evening <span>→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="visit" class="section visit-section">
+        <div class="container">
+          <div class="visit-grid">
+            <div>
+              <p class="eyebrow">PLAN YOUR VISIT</p>
+              <h2>Make room<br />for a good<br /><em>kind of busy.</em></h2>
+              <p>Save this page, bring your people, and use the details below to time it just right.</p>
+            </div>
+            <div class="visit-cards">
+              <article class="hours-card">
+                <span class="card-icon">◷</span>
+                <p class="eyebrow light">TODAY & EVERY DAY</p>
+                <h3>Open till 11 pm.</h3>
+                <p>The exact sweet spot for an early family dinner or a late plate and a slow conversation.</p>
+              </article>
+              <article class="visit-card">
+                <span class="visit-icon">⌖</span>
+                <h3>Find the table</h3>
+                <p>Bharthana Road, Bakewar, Etawah, Uttar Pradesh, 206124.</p>
+                <div class="visit-links">
+                  <a class="text-button" href="https://maps.app.goo.gl/eoStbyHXYwTJVEc49" target="_blank" rel="noreferrer">Open directions <span>↗</span></a>
+                  <button type="button" class="text-button" id="open-gallery">See the place <span>▶</span></button>
+                </div>
+              </article>
+              <article class="visit-card">
+                <span class="visit-icon">▣</span>
+                <h3>Arrive easy</h3>
+                <p>Visitors mention parking nearby. Leave a little time to settle in.</p>
+                <strong>₹200–800 per person</strong>
+              </article>
+            </div>
+          </div>
+          <div class="visit-footer">
+            <span class="phone-icon">⌕</span>
+            <span>For today’s specials or a quick question, call <a href="tel:07830493213">07830 493213</a>.</span>
+            <strong>WALK-INS WELCOME<br />BAKEWAR · ETAWAH</strong>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-top">
+            <div>
+              <a class="logo" href="#top" aria-label="Club 24 home">
+                <span class="logo-mark"><span>24</span></span>
+                <span><strong>CLUB 24</strong><small>क्लब 24 रेस्टोरेंट</small></span>
+              </a>
+              <p>A warm table, a full plate, and something sweet for later.</p>
+            </div>
+            <nav aria-label="Footer navigation">
+              <a href="#story">The feeling</a>
+              <a href="#menu">What to eat</a>
+              <a href="#reviews">Reviews</a>
+              <a href="#visit">Plan a visit</a>
+            </nav>
+          </div>
+          <div class="footer-bottom">
+            <span>CLUB 24 · क्लब 24 रेस्टोरेंट</span>
+            <span>Made for hungry people and the people who bring them.</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div class="modal" id="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="gallery-title" hidden>
+      <div class="modal-card">
+        <button class="modal-close" type="button" id="close-gallery" aria-label="Close gallery">×</button>
+        <img src="../public/club24-sweets.jpg" alt="Sweets at the Club 24 counter" />
+        <div class="modal-copy">
+          <p class="eyebrow">LOOK FOR THE LIGHTS</p>
+          <h2 id="gallery-title">A table is waiting.</h2>
+          <p>Club 24 sits beside Shristi Misthan Bhandaar — an easy landmark for a meal, a sweet stop, or both.</p>
+          <p class="check">✓ Walk-ins welcome</p>
+          <p class="check">✓ Open till 11 pm</p>
+          <a class="button button-orange" href="#menu" id="modal-menu-link">Browse the shortlist <span>→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./club-24-restaurant.js"></script>
+  </body>
+</html>
